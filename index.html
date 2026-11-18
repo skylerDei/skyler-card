@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#091b24">
+<meta name="description" content="戴于翔 Skyler｜淩琦科技／淩耀電子。智慧製造、AI 瑕疵檢測、異音檢測、PHM、設備聯網與老舊 PCB 控制板改造。">
+<meta property="og:title" content="戴于翔 Skyler｜智慧製造電子名片">
+<meta property="og:description" content="AI 智慧檢測 × 設備健康與延壽 × 工廠數位化。歡迎交流合作。">
+<meta property="og:type" content="website">
+<title>戴于翔 Skyler｜電子名片</title>
+<style>
+:root{--bg:#091b24;--card:#102e37;--muted:#adc6c8;--mint:#b5f5d2;--line:rgba(195,241,222,.18);--white:#f4faf7;--gold:#fad5ad}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:radial-gradient(circle at 84% -8%,#17443e,transparent 30%),linear-gradient(160deg,#091b24,#0d2831 55%,#081a24);color:var(--white);font-family:-apple-system,BlinkMacSystemFont,"Noto Sans TC","PingFang TC","Microsoft JhengHei",sans-serif;line-height:1.65}
+a{color:inherit;text-decoration:none}
+button{cursor:pointer;font:inherit}
+button:focus-visible,a:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+.wrap{width:min(100% - 36px,580px);margin:auto}
+header{display:flex;justify-content:space-between;align-items:center;padding:23px 0;gap:12px}
+.brand{font-size:12px;letter-spacing:.11em;font-weight:800}
+.brand small{display:block;font-size:10px;letter-spacing:.03em;font-weight:500;color:var(--muted)}
+.navlink{font-size:12px;color:var(--mint);border:1px solid var(--line);border-radius:100px;padding:7px 12px}
+.hero{padding:40px 0 30px}
+.eyebrow{color:var(--mint);font-size:11px;font-weight:800;letter-spacing:.14em}
+.person{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-top:15px}
+h1{font-size:clamp(44px,11vw,64px);line-height:1.15;letter-spacing:-.05em;margin:0}
+.english{font-size:21px;color:var(--mint);letter-spacing:.08em;font-weight:600;margin-top:8px}
+.monogram{width:85px;height:85px;flex:none;border:1px solid #4c8c83;background:linear-gradient(135deg,#214c4e,#0e2930);border-radius:25px;display:grid;place-items:center;transform:rotate(7deg);color:var(--mint);font-size:30px;font-weight:800}
+.monogram span{transform:rotate(-7deg)}
+.company{font-weight:700;font-size:15px;margin:24px 0 0}
+.role{font-size:13px;color:var(--muted);margin:3px 0}
+.intro{font-size:18px;line-height:1.85;margin:24px 0 25px}
+.intro strong{color:var(--mint)}
+.actions{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.btn{border:1px solid var(--line);min-height:52px;border-radius:14px;display:flex;align-items:center;justify-content:center;gap:7px;padding:11px;color:var(--white);font-size:14px;font-weight:750;background:var(--card)}
+.btn.primary{background:var(--mint);border-color:var(--mint);color:#103132}
+.btn:active{transform:scale(.98)}
+.tools{display:grid;grid-template-columns:repeat(3,1fr);gap:9px;margin-top:10px}
+.tool{background:rgba(255,255,255,.035);color:var(--mint);border:1px solid var(--line);border-radius:12px;min-height:57px;font-size:12px;padding:8px 3px;text-align:center}
+.tool span{display:block;font-size:19px;line-height:1.3}
+hr{border:0;height:1px;background:var(--line);margin:34px 0}
+section{padding:0 0 22px}
+.caption{font-size:11px;letter-spacing:.15em;color:var(--mint);font-weight:800}
+h2{font-size:25px;line-height:1.35;letter-spacing:-.03em;margin:4px 0 9px}
+.subtext{color:var(--muted);font-size:13px;margin:0 0 22px}
+.group{display:flex;gap:10px;align-items:center;color:#a1bdbc;font-weight:700;font-size:12px;margin:21px 0 11px}
+.group:after{content:"";height:1px;background:var(--line);flex:1}
+.service{display:flex;gap:13px;border:1px solid var(--line);background:linear-gradient(135deg,#12353f,#0f2c35);border-radius:16px;padding:17px 16px;margin-bottom:9px}
+.num{font-size:11px;font-weight:800;color:var(--gold);padding-top:3px}
+.service h3{font-size:15px;margin:0 0 5px}
+.service p{font-size:12px;color:var(--muted);margin:0;line-height:1.7}
+.statement{margin:25px 0 37px;border:1px solid rgba(181,245,210,.27);background:linear-gradient(125deg,#1c4c4c,#12373c);border-radius:18px;padding:22px}
+.statement strong{font-size:19px;line-height:1.6;display:block;margin:7px 0}
+.statement p{font-size:13px;color:#c1d6d1;margin:5px 0}
+.contact{border:1px solid var(--line);background:var(--card);border-radius:19px;padding:22px 18px;margin-bottom:34px}
+.contact .meta{display:grid;grid-template-columns:56px 1fr;gap:10px;font-size:13px;border-top:1px solid var(--line);padding:12px 0}
+.contact .meta:first-of-type{margin-top:15px}
+.key{color:#9cbabc;font-weight:600}
+.val{overflow-wrap:anywhere}
+.val a{text-decoration:underline;text-underline-offset:3px;text-decoration-color:#557e77}
+footer{text-align:center;padding:0 0 45px;color:#8cabae;font-size:11px}
+.overlay{position:fixed;inset:0;background:rgba(0,12,17,.85);z-index:10;display:none;align-items:center;justify-content:center;padding:20px}
+.overlay.show{display:flex}
+.dialog{width:min(100%,340px);background:white;color:#102b2b;border-radius:22px;text-align:center;padding:22px}
+.dialog h2{font-size:22px}
+.dialog p{font-size:13px;color:#5c7370}
+#qr{width:min(100%,250px);height:auto;shape-rendering:crispEdges}
+.dialog .close{border:0;background:#133c3b;color:white;border-radius:12px;padding:12px;width:100%;font-weight:750}
+.dialog .url{word-break:break-all;font-size:12px;color:#54736b;margin:8px 0 15px}
+@media(max-width:350px){.wrap{width:calc(100% - 26px)}.monogram{width:68px;height:68px;border-radius:18px;font-size:24px}.service{padding:14px 12px}h1{font-size:42px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header><div class="brand">INIKI <span style="color:var(--mint)">/</span> INDUSTRIAL AI<small>淩琦科技 × 淩耀電子</small></div><a class="navlink" href="#solutions">探索解決方案 ↘</a></header>
+<main>
+<div class="hero">
+<div class="eyebrow">智慧製造 · AI · 系統整合</div>
+<div class="person"><div><h1>戴于翔</h1><div class="english">SKYLER DEI</div></div><div class="monogram" aria-hidden="true"><span>SD.</span></div></div>
+<p class="company">淩琦科技 ／ 淩耀電子</p><p class="role">智慧製造・AI 應用・工業系統整合</p>
+<p class="intro">把工廠現場的問題，<br>轉化成<strong>真正能落地的解決方案。</strong></p>
+<div class="actions">
+<a class="btn primary" href="https://line.me/ti/p/hQWQcxWqGI" target="_blank" rel="noopener">LINE 加好友 ↗</a>
+<a class="btn" href="tel:+886933850580">☎ 立即撥號</a>
+<a class="btn" href="./skyler.vcf" download="Skyler-Dei.vcf">＋ 儲存聯絡人</a>
+<button type="button" class="btn" id="share">↗ 分享名片</button>
+</div>
+<div class="tools">
+<a class="tool" href="mailto:skyler@icshop.com.tw"><span>✉</span>Email</a>
+<a class="tool" href="https://www.iniki.com.tw/" target="_blank" rel="noopener"><span>◎</span>公司網站</a>
+<button class="tool" type="button" id="qr-open"><span>▦</span>顯示 QR Code</button>
+</div>
+</div>
+<hr>
+<section id="solutions">
+<div class="caption">WHAT WE DO</div><h2>智慧製造七大解決方案</h2>
+<p class="subtext">AI 智慧檢測 × 設備健康與延壽 × 工廠數位化</p>
+<div class="group">AI 智慧檢測</div>
+<article class="service"><span class="num">01</span><div><h3>AI 視覺瑕疵檢測</h3><p>透過相機與 AI 辨識產品外觀缺陷，提升品質檢驗效率與一致性。</p></div></article>
+<article class="service"><span class="num">02</span><div><h3>AI 異音檢測</h3><p>分析馬達與設備運轉聲音，辨識異常特徵，減少人工聽音判斷。</p></div></article>
+<div class="group">設備健康與延壽</div>
+<article class="service"><span class="num">03</span><div><h3>設備振動監測與預知保養（PHM）</h3><p>利用振動及溫度等數據掌握設備狀態，提早發現異常徵兆。</p></div></article>
+<article class="service"><span class="num">04</span><div><h3>老舊 PCB 控制板修復與改造</h3><p>評估電路修復、停產零件替代與重新設計，延長設備使用年限。</p></div></article>
+<div class="group">工廠數位化與智慧廠務</div>
+<article class="service"><span class="num">05</span><div><h3>工業物聯網與設備聯網（IIoT）</h3><p>串接新舊設備、感測器與 PLC，整合現場數據及遠端監控。</p></div></article>
+<article class="service"><span class="num">06</span><div><h3>SCADA、MES 與生產數據整合</h3><p>整合設備監控、生產管理及品質履歷，提升資訊透明度。</p></div></article>
+<article class="service"><span class="num">07</span><div><h3>廠務安全與 AI 智慧監控</h3><p>應用 AI 影像分析，協助禁制區管理、人員安全監測與異常告警。</p></div></article>
+<div class="statement"><div class="caption">OUR APPROACH</div><strong>從現場痛點出發，<br>讓技術真正落地。</strong><p>不只提供單一產品，而是整合感測、AI、硬體與軟體，協助工廠從需求評估、概念驗證走向實際導入。</p></div>
+</section>
+<section class="contact" id="contact">
+<div class="caption">LET'S CONNECT</div><h2>歡迎交流合作</h2><p class="subtext">有品質檢測、設備維護或工廠資料整合需求，歡迎聯絡。</p>
+<div class="meta"><div class="key">姓名</div><div class="val">戴于翔 Skyler Dei</div></div>
+<div class="meta"><div class="key">公司</div><div class="val">淩琦科技／淩耀電子</div></div>
+<div class="meta"><div class="key">手機</div><div class="val"><a href="tel:+886933850580">0933-850-580</a></div></div>
+<div class="meta"><div class="key">Email</div><div class="val"><a href="mailto:skyler@icshop.com.tw">skyler@icshop.com.tw</a></div></div>
+<div class="meta"><div class="key">LINE</div><div class="val"><a href="https://line.me/ti/p/hQWQcxWqGI" target="_blank" rel="noopener">點我加入個人 LINE ↗</a></div></div>
+<div class="meta"><div class="key">地址</div><div class="val"><a target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&amp;query=%E9%AB%98%E9%9B%84%E5%B8%82%E4%B8%89%E6%B0%91%E5%8D%80%E4%B9%9D%E5%A6%82%E4%B8%80%E8%B7%AF502%E8%99%9F26%E6%A8%93%E4%B9%8B3">高雄市三民區九如一路502號26樓之3（A2）↗</a></div></div>
+</section>
+</main>
+<footer>SKYLER DEI · SMART MANUFACTURING & INDUSTRIAL AI</footer>
+</div>
+<div id="qr-modal" class="overlay" role="dialog" aria-modal="true" aria-label="電子名片 QR Code">
+<div class="dialog"><h2>掃描我的電子名片</h2><p>掃碼查看服務與聯絡資訊</p><svg id="qr" viewBox="0 0 33 33" aria-label="Skyler 電子名片 QR Code"></svg><div class="url">skylerdei.github.io/skyler-card/</div><button class="close" id="qr-close">關閉</button></div>
+</div>
+<script>
+(function(){
+const url='https://skylerdei.github.io/skyler-card/';
+const rows='000000000,000000000,07f3321fc,041544104,05d650174,05d7a6d74,05d315d74,041367104,07f5555fc,000645400,041773738,07e31f8d8,055c1a440,02ebc92a0,06f098584,03c52ffcc,0136fd6f0,008b80814,05924a0b0,0486efddc,07530cd24,046d24c00,043f13fdc,00065b460,07f38ed70,0412d0440,05d330fe8,05d17ca34,05d14f7f8,04117c3b4,07f612870,000000000,000000000'.split(',');
+const svg=document.getElementById('qr'),ns='http://www.w3.org/2000/svg';
+const bg=document.createElementNS(ns,'rect');bg.setAttribute('width','33');bg.setAttribute('height','33');bg.setAttribute('fill','white');svg.append(bg);
+rows.forEach((hex,y)=>{const bits=BigInt('0x'+hex).toString(2).padStart(33,'0');for(let x=0;x<33;x++)if(bits[x]==='1'){const node=document.createElementNS(ns,'rect');node.setAttribute('x',x);node.setAttribute('y',y);node.setAttribute('width','1');node.setAttribute('height','1');node.setAttribute('fill','#0e292d');svg.append(node);}});
+const modal=document.getElementById('qr-modal'),opener=document.getElementById('qr-open'),closer=document.getElementById('qr-close');
+opener.onclick=()=>{modal.classList.add('show');closer.focus()};
+function hide(){modal.classList.remove('show');opener.focus()}
+closer.onclick=hide;modal.addEventListener('click',e=>{if(e.target===modal)hide()});document.addEventListener('keydown',e=>{if(e.key==='Escape'&&modal.classList.contains('show'))hide()});
+document.getElementById('share').addEventListener('click',async()=>{
+try{if(navigator.share){await navigator.share({title:'戴于翔 Skyler｜電子名片',url,text:'智慧製造與 AI 系統整合'});}
+else if(navigator.clipboard){await navigator.clipboard.writeText(url);alert('電子名片網址已複製！');}else{prompt('複製電子名片網址：',url)}}catch(e){if(e.name!=='AbortError')alert('分享失敗，請改用複製網址')}
+});
+})();
+</script>
+</body></html>
