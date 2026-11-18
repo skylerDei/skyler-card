@@ -123,15 +123,15 @@ footer{text-align:center;padding:0 0 45px;color:#8cabae;font-size:11px}
 <footer>SKYLER DEI · SMART MANUFACTURING & INDUSTRIAL AI</footer>
 </div>
 <div id="qr-modal" class="overlay" role="dialog" aria-modal="true" aria-label="電子名片 QR Code">
-<div class="dialog"><h2>掃描我的電子名片</h2><p>掃碼查看服務與聯絡資訊</p><svg id="qr" viewBox="0 0 33 33" aria-label="Skyler 電子名片 QR Code"></svg><div class="url">skylerdei.github.io/skyler-card/</div><button class="close" id="qr-close">關閉</button></div>
+<div class="dialog"><h2>掃描我的電子名片</h2><p>掃碼查看服務與聯絡資訊</p><svg id="qr" viewBox="0 0 37 37" aria-label="Skyler 電子名片 QR Code"></svg><div class="url">skylerdei.github.io/skyler-card/</div><button class="close" id="qr-close">關閉</button></div>
 </div>
 <script>
 (function(){
 const url='https://skylerdei.github.io/skyler-card/';
-const rows='000000000,000000000,07f3321fc,041544104,05d650174,05d7a6d74,05d315d74,041367104,07f5555fc,000645400,041773738,07e31f8d8,055c1a440,02ebc92a0,06f098584,03c52ffcc,0136fd6f0,008b80814,05924a0b0,0486efddc,07530cd24,046d24c00,043f13fdc,00065b460,07f38ed70,0412d0440,05d330fe8,05d17ca34,05d14f7f8,04117c3b4,07f612870,000000000,000000000'.split(',');
+const rows='0000000000,0000000000,0000000000,0000000000,01fccc87f0,0105510410,01759405d0,0175e9b5d0,0174c575d0,0104d9c410,01fd5557f0,0001915000,0105dcdce0,01f8c7e360,0157069100,00baf24a80,01bc261610,00f14bff30,004dbf5bc0,0022e02050,01649282c0,0121bbf770,01d4c33490,011b493000,010fc4ff70,000196d180,01fce3b5c0,0174cc3fa0,01745f28d0,017453dfe0,01045f0ed0,01fd84a1c0,0000000000,0000000000,0000000000,0000000000'.split(',');
 const svg=document.getElementById('qr'),ns='http://www.w3.org/2000/svg';
-const bg=document.createElementNS(ns,'rect');bg.setAttribute('width','33');bg.setAttribute('height','33');bg.setAttribute('fill','white');svg.append(bg);
-rows.forEach((hex,y)=>{const bits=BigInt('0x'+hex).toString(2).padStart(33,'0');for(let x=0;x<33;x++)if(bits[x]==='1'){const node=document.createElementNS(ns,'rect');node.setAttribute('x',x);node.setAttribute('y',y);node.setAttribute('width','1');node.setAttribute('height','1');node.setAttribute('fill','#0e292d');svg.append(node);}});
+const bg=document.createElementNS(ns,'rect');bg.setAttribute('width','37');bg.setAttribute('height','37');bg.setAttribute('fill','white');svg.append(bg);
+rows.forEach((hex,y)=>{const bits=BigInt('0x'+hex).toString(2).padStart(37,'0');for(let x=0;x<33;x++)if(bits[x]==='1'){const node=document.createElementNS(ns,'rect');node.setAttribute('x',x);node.setAttribute('y',y);node.setAttribute('width','1');node.setAttribute('height','1');node.setAttribute('fill','#0e292d');svg.append(node);}});
 const modal=document.getElementById('qr-modal'),opener=document.getElementById('qr-open'),closer=document.getElementById('qr-close');
 opener.onclick=()=>{modal.classList.add('show');closer.focus()};
 function hide(){modal.classList.remove('show');opener.focus()}
