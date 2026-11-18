@@ -2,128 +2,126 @@
 <html lang="zh-Hant">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<meta name="theme-color" content="#091b24">
-<meta name="description" content="戴于翔 Skyler｜淩琦科技／淩耀電子。智慧製造、AI 瑕疵檢測、異音檢測、PHM、設備聯網與老舊 PCB 控制板改造。">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#f5f6f8">
+<meta name="description" content="戴于翔 Skyler｜淩琦科技／淩耀電子。AI 智慧檢測、設備預知保養、工業物聯網與 PCB 控制板改造。">
 <meta property="og:title" content="戴于翔 Skyler｜智慧製造電子名片">
-<meta property="og:description" content="AI 智慧檢測 × 設備健康與延壽 × 工廠數位化。歡迎交流合作。">
+<meta property="og:description" content="智慧製造・AI 系統整合。快速加 LINE、撥號、儲存聯絡人，認識七大解決方案。">
 <meta property="og:type" content="website">
 <title>戴于翔 Skyler｜電子名片</title>
 <style>
-:root{--bg:#091b24;--card:#102e37;--muted:#adc6c8;--mint:#b5f5d2;--line:rgba(195,241,222,.18);--white:#f4faf7;--gold:#fad5ad}
+:root{--bg:#f5f6f8;--card:#fff;--ink:#1d2835;--sub:#687584;--line:#e6e9ef;--main:#285478;--soft:#eaf2f7;--red:#d9524a}
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
-body{margin:0;background:radial-gradient(circle at 84% -8%,#17443e,transparent 30%),linear-gradient(160deg,#091b24,#0d2831 55%,#081a24);color:var(--white);font-family:-apple-system,BlinkMacSystemFont,"Noto Sans TC","PingFang TC","Microsoft JhengHei",sans-serif;line-height:1.65}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Noto Sans TC","PingFang TC","Microsoft JhengHei",sans-serif;line-height:1.65}
+button,a{-webkit-tap-highlight-color:transparent}
+button{font:inherit;cursor:pointer}
+button:focus-visible,a:focus-visible{outline:3px solid #a4bbd9;outline-offset:3px}
 a{color:inherit;text-decoration:none}
-button{cursor:pointer;font:inherit}
-button:focus-visible,a:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
-.wrap{width:min(100% - 36px,580px);margin:auto}
-header{display:flex;justify-content:space-between;align-items:center;padding:23px 0;gap:12px}
-.brand{font-size:12px;letter-spacing:.11em;font-weight:800}
-.brand small{display:block;font-size:10px;letter-spacing:.03em;font-weight:500;color:var(--muted)}
-.navlink{font-size:12px;color:var(--mint);border:1px solid var(--line);border-radius:100px;padding:7px 12px}
-.hero{padding:40px 0 30px}
-.eyebrow{color:var(--mint);font-size:11px;font-weight:800;letter-spacing:.14em}
-.person{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-top:15px}
-h1{font-size:clamp(44px,11vw,64px);line-height:1.15;letter-spacing:-.05em;margin:0}
-.english{font-size:21px;color:var(--mint);letter-spacing:.08em;font-weight:600;margin-top:8px}
-.monogram{width:85px;height:85px;flex:none;border:1px solid #4c8c83;background:linear-gradient(135deg,#214c4e,#0e2930);border-radius:25px;display:grid;place-items:center;transform:rotate(7deg);color:var(--mint);font-size:30px;font-weight:800}
-.monogram span{transform:rotate(-7deg)}
-.company{font-weight:700;font-size:15px;margin:24px 0 0}
-.role{font-size:13px;color:var(--muted);margin:3px 0}
-.intro{font-size:18px;line-height:1.85;margin:24px 0 25px}
-.intro strong{color:var(--mint)}
+.wrap{max-width:520px;width:min(100% - 28px,520px);margin:0 auto;padding:0 0 25px}
+.topbar{text-align:center;padding:28px 0 16px}
+.brandword{display:inline-flex;align-items:center;justify-content:center;gap:10px;color:#1c2735}
+.branddot{display:inline-block;width:12px;height:12px;border-radius:3px;transform:rotate(45deg);background:var(--red)}
+.brandword .logotype{font-size:24px;font-family:Arial,Helvetica,sans-serif;font-weight:850;letter-spacing:.09em;line-height:1.2}
+.topbar small{display:block;color:var(--sub);font-size:11px;margin-top:6px;letter-spacing:.07em}
+.profile{text-align:center;background:var(--card);padding:31px 20px 24px;border:1px solid var(--line);border-radius:20px;box-shadow:0 9px 30px rgba(21,43,67,.045)}
+.logo-big{margin:0 auto 17px;width:104px;height:104px;border:1px solid #e6e9ec;border-radius:50%;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;background:#fff;box-shadow:0 4px 20px rgba(23,33,48,.05)}
+.logo-big .logotype{font-size:20px;letter-spacing:.06em;font-family:Arial,Helvetica,sans-serif;font-weight:850}
+.logo-big .branddot{width:17px;height:17px}
+h1{font-size:32px;letter-spacing:.04em;line-height:1.35;margin:0;font-weight:750}
+.en{color:var(--sub);font-size:13px;letter-spacing:.14em;margin-top:2px;font-weight:650}
+.company{margin-top:14px;font-size:14px;font-weight:650;color:#37465a}
+.role{font-size:12px;line-height:1.55;margin:4px auto 18px;color:var(--sub)}
+.tagline{font-size:13px;line-height:1.65;color:#586979;margin:0 auto 24px;max-width:300px}
 .actions{display:grid;grid-template-columns:1fr 1fr;gap:10px}
-.btn{border:1px solid var(--line);min-height:52px;border-radius:14px;display:flex;align-items:center;justify-content:center;gap:7px;padding:11px;color:var(--white);font-size:14px;font-weight:750;background:var(--card)}
-.btn.primary{background:var(--mint);border-color:var(--mint);color:#103132}
-.btn:active{transform:scale(.98)}
-.tools{display:grid;grid-template-columns:repeat(3,1fr);gap:9px;margin-top:10px}
-.tool{background:rgba(255,255,255,.035);color:var(--mint);border:1px solid var(--line);border-radius:12px;min-height:57px;font-size:12px;padding:8px 3px;text-align:center}
-.tool span{display:block;font-size:19px;line-height:1.3}
-hr{border:0;height:1px;background:var(--line);margin:34px 0}
-section{padding:0 0 22px}
-.caption{font-size:11px;letter-spacing:.15em;color:var(--mint);font-weight:800}
-h2{font-size:25px;line-height:1.35;letter-spacing:-.03em;margin:4px 0 9px}
-.subtext{color:var(--muted);font-size:13px;margin:0 0 22px}
-.group{display:flex;gap:10px;align-items:center;color:#a1bdbc;font-weight:700;font-size:12px;margin:21px 0 11px}
-.group:after{content:"";height:1px;background:var(--line);flex:1}
-.service{display:flex;gap:13px;border:1px solid var(--line);background:linear-gradient(135deg,#12353f,#0f2c35);border-radius:16px;padding:17px 16px;margin-bottom:9px}
-.num{font-size:11px;font-weight:800;color:var(--gold);padding-top:3px}
-.service h3{font-size:15px;margin:0 0 5px}
-.service p{font-size:12px;color:var(--muted);margin:0;line-height:1.7}
-.statement{margin:25px 0 37px;border:1px solid rgba(181,245,210,.27);background:linear-gradient(125deg,#1c4c4c,#12373c);border-radius:18px;padding:22px}
-.statement strong{font-size:19px;line-height:1.6;display:block;margin:7px 0}
-.statement p{font-size:13px;color:#c1d6d1;margin:5px 0}
-.contact{border:1px solid var(--line);background:var(--card);border-radius:19px;padding:22px 18px;margin-bottom:34px}
-.contact .meta{display:grid;grid-template-columns:56px 1fr;gap:10px;font-size:13px;border-top:1px solid var(--line);padding:12px 0}
-.contact .meta:first-of-type{margin-top:15px}
-.key{color:#9cbabc;font-weight:600}
-.val{overflow-wrap:anywhere}
-.val a{text-decoration:underline;text-underline-offset:3px;text-decoration-color:#557e77}
-footer{text-align:center;padding:0 0 45px;color:#8cabae;font-size:11px}
-.overlay{position:fixed;inset:0;background:rgba(0,12,17,.85);z-index:10;display:none;align-items:center;justify-content:center;padding:20px}
+.btn{min-height:49px;display:flex;align-items:center;justify-content:center;gap:8px;border-radius:12px;border:1px solid var(--line);background:#fff;color:var(--ink);font-size:14px;font-weight:650;padding:12px 8px}
+.btn:active,.smallbtn:active{transform:scale(.98)}
+.btn-line{background:#06c755;color:white;border-color:#06c755}
+.btn-save{background:#f0f5f9;border-color:#d9e5ed;color:#254b6b}
+.btn .ico{font-size:17px;line-height:1}
+.smallbtns{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:10px}
+.smallbtn{border:1px solid var(--line);background:#fff;color:#4f6172;border-radius:12px;padding:12px 4px;display:flex;align-items:center;justify-content:center;gap:5px;font-size:12px;min-height:45px}
+.smallbtn .ico{font-size:16px}
+.quick-info{display:grid;grid-template-columns:1fr;gap:8px;text-align:left;margin-top:23px;border-top:1px solid var(--line);padding-top:18px}
+.quick-info a{display:flex;align-items:center;justify-content:space-between;gap:8px;font-size:13px;color:#445668;overflow-wrap:anywhere}
+.quick-info .lbl{color:#86909a;font-size:12px}
+.section-heading{text-align:center;margin:42px 0 17px}
+.section-heading .eyebrow{font-size:11px;font-weight:750;letter-spacing:.15em;color:#7990a0}
+h2{font-size:22px;font-weight:750;margin:4px 0 5px;letter-spacing:.02em}
+.section-heading p{font-size:12px;color:var(--sub);margin:3px 0}
+.service-list{border:1px solid var(--line);background:var(--card);border-radius:17px;overflow:hidden}
+.service{display:flex;align-items:flex-start;gap:13px;padding:16px;border-bottom:1px solid var(--line)}
+.service:last-child{border-bottom:0}
+.num{flex:none;color:#7290a8;font-size:12px;font-weight:750;min-width:20px;padding-top:2px}
+.service h3{font-size:14px;font-weight:730;margin:0 0 3px;line-height:1.5}
+.service p{font-size:12px;line-height:1.65;color:var(--sub);margin:0}
+.footer-links{display:flex;justify-content:center;gap:17px;margin:27px 0 0;color:#586c7b;font-size:12px}
+.footer-links a{text-decoration:underline;text-decoration-color:#cbd6df;text-underline-offset:3px}
+footer{text-align:center;color:#9aa7b3;font-size:11px;padding:22px 0 7px}
+.overlay{position:fixed;inset:0;background:rgba(17,26,35,.73);z-index:10;display:none;align-items:center;justify-content:center;padding:18px}
 .overlay.show{display:flex}
-.dialog{width:min(100%,340px);background:white;color:#102b2b;border-radius:22px;text-align:center;padding:22px}
-.dialog h2{font-size:22px}
-.dialog p{font-size:13px;color:#5c7370}
-#qr{width:min(100%,250px);height:auto;shape-rendering:crispEdges}
-.dialog .close{border:0;background:#133c3b;color:white;border-radius:12px;padding:12px;width:100%;font-weight:750}
-.dialog .url{word-break:break-all;font-size:12px;color:#54736b;margin:8px 0 15px}
-@media(max-width:350px){.wrap{width:calc(100% - 26px)}.monogram{width:68px;height:68px;border-radius:18px;font-size:24px}.service{padding:14px 12px}h1{font-size:42px}}
+.dialog{width:min(100%,350px);background:#fff;border-radius:20px;color:var(--ink);text-align:center;padding:24px}
+.dialog h2{font-size:20px;margin:0}
+.dialog p{font-size:12px;color:var(--sub)}
+#qr{width:min(100%,245px);height:auto;shape-rendering:crispEdges}
+.dialog .url{font-size:12px;color:var(--sub);word-break:break-all;margin:8px 0 18px}
+.dialog .close{border:0;border-radius:10px;padding:12px 20px;width:100%;background:var(--main);color:#fff;font-weight:700}
+@media(max-width:340px){.wrap{width:calc(100% - 20px)}.profile{padding:28px 12px 20px}.btn{font-size:12px;gap:4px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 </style>
 </head>
 <body>
 <div class="wrap">
-<header><div class="brand">INIKI <span style="color:var(--mint)">/</span> INDUSTRIAL AI<small>淩琦科技 × 淩耀電子</small></div><a class="navlink" href="#solutions">探索解決方案 ↘</a></header>
+<header class="topbar">
+<div class="brandword" aria-label="INIKI 品牌"><span class="branddot" aria-hidden="true"></span><span class="logotype">INIKI</span></div>
+<small>淩琦科技／淩耀電子</small>
+</header>
 <main>
-<div class="hero">
-<div class="eyebrow">智慧製造 · AI · 系統整合</div>
-<div class="person"><div><h1>戴于翔</h1><div class="english">SKYLER DEI</div></div><div class="monogram" aria-hidden="true"><span>SD.</span></div></div>
-<p class="company">淩琦科技 ／ 淩耀電子</p><p class="role">智慧製造・AI 應用・工業系統整合</p>
-<p class="intro">把工廠現場的問題，<br>轉化成<strong>真正能落地的解決方案。</strong></p>
+<section class="profile">
+<div class="logo-big" role="img" aria-label="INIKI 品牌字樣"><span class="branddot" aria-hidden="true"></span><span class="logotype">INIKI</span></div>
+<h1>戴于翔</h1><div class="en">SKYLER DEI</div>
+<div class="company">淩琦科技 ／ 淩耀電子</div>
+<div class="role">智慧製造・AI 應用・工業系統整合</div>
+<p class="tagline">從現場需求出發，整合 AI、感測技術與既有設備，讓解決方案真正落地。</p>
 <div class="actions">
-<a class="btn primary" href="https://line.me/ti/p/hQWQcxWqGI" target="_blank" rel="noopener">LINE 加好友 ↗</a>
-<a class="btn" href="tel:+886933850580">☎ 立即撥號</a>
-<a class="btn" href="./skyler.vcf" download="Skyler-Dei.vcf">＋ 儲存聯絡人</a>
-<button type="button" class="btn" id="share">↗ 分享名片</button>
+<a class="btn btn-line" href="https://line.me/ti/p/hQWQcxWqGI" target="_blank" rel="noopener"><span class="ico" aria-hidden="true">●</span> 加 LINE 好友</a>
+<a class="btn" href="tel:+886933850580"><span class="ico" aria-hidden="true">☎</span> 撥打電話</a>
+<a class="btn btn-save" href="./skyler.vcf" download="Skyler-Dei.vcf"><span class="ico" aria-hidden="true">＋</span> 儲存聯絡人</a>
+<button class="btn" type="button" id="share"><span class="ico" aria-hidden="true">↗</span> 分享名片</button>
 </div>
-<div class="tools">
-<a class="tool" href="mailto:skyler@icshop.com.tw"><span>✉</span>Email</a>
-<a class="tool" href="https://www.iniki.com.tw/" target="_blank" rel="noopener"><span>◎</span>公司網站</a>
-<button class="tool" type="button" id="qr-open"><span>▦</span>顯示 QR Code</button>
+<div class="smallbtns">
+<a class="smallbtn" href="mailto:skyler@icshop.com.tw"><span class="ico" aria-hidden="true">✉</span>Email</a>
+<a class="smallbtn" href="https://www.iniki.com.tw/" target="_blank" rel="noopener"><span class="ico" aria-hidden="true">⌂</span>公司官網</a>
+<button class="smallbtn" type="button" id="qr-open"><span class="ico" aria-hidden="true">▦</span>QR Code</button>
 </div>
+<div class="quick-info">
+<a href="tel:+886933850580"><span class="lbl">手機</span><span>0933-850-580</span></a>
+<a href="mailto:skyler@icshop.com.tw"><span class="lbl">Email</span><span>skyler@icshop.com.tw</span></a>
+<a href="https://www.google.com/maps/search/?api=1&amp;query=%E9%AB%98%E9%9B%84%E5%B8%82%E4%B8%89%E6%B0%91%E5%8D%80%E4%B9%9D%E5%A6%82%E4%B8%80%E8%B7%AF502%E8%99%9F26%E6%A8%93%E4%B9%8B3" target="_blank" rel="noopener"><span class="lbl">地址</span><span>高雄市三民區九如一路502號26樓之3 ↗</span></a>
 </div>
-<hr>
+</section>
 <section id="solutions">
-<div class="caption">WHAT WE DO</div><h2>智慧製造七大解決方案</h2>
-<p class="subtext">AI 智慧檢測 × 設備健康與延壽 × 工廠數位化</p>
-<div class="group">AI 智慧檢測</div>
-<article class="service"><span class="num">01</span><div><h3>AI 視覺瑕疵檢測</h3><p>透過相機與 AI 辨識產品外觀缺陷，提升品質檢驗效率與一致性。</p></div></article>
-<article class="service"><span class="num">02</span><div><h3>AI 異音檢測</h3><p>分析馬達與設備運轉聲音，辨識異常特徵，減少人工聽音判斷。</p></div></article>
-<div class="group">設備健康與延壽</div>
-<article class="service"><span class="num">03</span><div><h3>設備振動監測與預知保養（PHM）</h3><p>利用振動及溫度等數據掌握設備狀態，提早發現異常徵兆。</p></div></article>
+<div class="section-heading">
+<div class="eyebrow">OUR SOLUTIONS</div>
+<h2>七大智慧製造解決方案</h2>
+<p>快速了解我們能協助您解決的現場問題</p>
+</div>
+<div class="service-list">
+<article class="service"><span class="num">01</span><div><h3>AI 視覺瑕疵檢測</h3><p>以相機結合 AI 辨識產品外觀缺陷，提升檢驗效率與一致性。</p></div></article>
+<article class="service"><span class="num">02</span><div><h3>AI 異音檢測</h3><p>分析馬達及設備的運轉聲音，辨識異常特徵，輔助品質判定。</p></div></article>
+<article class="service"><span class="num">03</span><div><h3>設備振動監測與預知保養（PHM）</h3><p>利用振動及溫度等數據掌握設備健康狀態，提早發現異常徵兆。</p></div></article>
 <article class="service"><span class="num">04</span><div><h3>老舊 PCB 控制板修復與改造</h3><p>評估電路修復、停產零件替代與重新設計，延長設備使用年限。</p></div></article>
-<div class="group">工廠數位化與智慧廠務</div>
-<article class="service"><span class="num">05</span><div><h3>工業物聯網與設備聯網（IIoT）</h3><p>串接新舊設備、感測器與 PLC，整合現場數據及遠端監控。</p></div></article>
+<article class="service"><span class="num">05</span><div><h3>工業物聯網與設備聯網（IIoT）</h3><p>串接新舊設備、感測器及 PLC，整合現場數據與遠端監控。</p></div></article>
 <article class="service"><span class="num">06</span><div><h3>SCADA、MES 與生產數據整合</h3><p>整合設備監控、生產管理及品質履歷，提升資訊透明度。</p></div></article>
-<article class="service"><span class="num">07</span><div><h3>廠務安全與 AI 智慧監控</h3><p>應用 AI 影像分析，協助禁制區管理、人員安全監測與異常告警。</p></div></article>
-<div class="statement"><div class="caption">OUR APPROACH</div><strong>從現場痛點出發，<br>讓技術真正落地。</strong><p>不只提供單一產品，而是整合感測、AI、硬體與軟體，協助工廠從需求評估、概念驗證走向實際導入。</p></div>
+<article class="service"><span class="num">07</span><div><h3>廠務安全與 AI 智慧監控</h3><p>透過 AI 影像分析，協助禁制區管理、人員安全與異常事件告警。</p></div></article>
+</div>
 </section>
-<section class="contact" id="contact">
-<div class="caption">LET'S CONNECT</div><h2>歡迎交流合作</h2><p class="subtext">有品質檢測、設備維護或工廠資料整合需求，歡迎聯絡。</p>
-<div class="meta"><div class="key">姓名</div><div class="val">戴于翔 Skyler Dei</div></div>
-<div class="meta"><div class="key">公司</div><div class="val">淩琦科技／淩耀電子</div></div>
-<div class="meta"><div class="key">手機</div><div class="val"><a href="tel:+886933850580">0933-850-580</a></div></div>
-<div class="meta"><div class="key">Email</div><div class="val"><a href="mailto:skyler@icshop.com.tw">skyler@icshop.com.tw</a></div></div>
-<div class="meta"><div class="key">LINE</div><div class="val"><a href="https://line.me/ti/p/hQWQcxWqGI" target="_blank" rel="noopener">點我加入個人 LINE ↗</a></div></div>
-<div class="meta"><div class="key">地址</div><div class="val"><a target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&amp;query=%E9%AB%98%E9%9B%84%E5%B8%82%E4%B8%89%E6%B0%91%E5%8D%80%E4%B9%9D%E5%A6%82%E4%B8%80%E8%B7%AF502%E8%99%9F26%E6%A8%93%E4%B9%8B3">高雄市三民區九如一路502號26樓之3（A2）↗</a></div></div>
-</section>
+<div class="footer-links"><a href="https://line.me/ti/p/hQWQcxWqGI" target="_blank" rel="noopener">LINE 加好友</a><a href="https://www.iniki.com.tw/" target="_blank" rel="noopener">公司官網</a><a href="#top" onclick="window.scrollTo({top:0,behavior:'smooth'});return false;">返回頂部 ↑</a></div>
 </main>
-<footer>SKYLER DEI · SMART MANUFACTURING & INDUSTRIAL AI</footer>
+<footer>© 2026 INIKI · Skyler Dei</footer>
 </div>
 <div id="qr-modal" class="overlay" role="dialog" aria-modal="true" aria-label="電子名片 QR Code">
-<div class="dialog"><h2>掃描我的電子名片</h2><p>掃碼查看服務與聯絡資訊</p><svg id="qr" viewBox="0 0 37 37" aria-label="Skyler 電子名片 QR Code"></svg><div class="url">skylerdei.github.io/skyler-card/</div><button class="close" id="qr-close">關閉</button></div>
+<div class="dialog"><h2>掃描電子名片</h2><p>掃碼開啟聯絡資訊與服務介紹</p><svg id="qr" viewBox="0 0 37 37" aria-label="Skyler 電子名片 QR Code"></svg><div class="url">skylerdei.github.io/skyler-card/</div><button class="close" id="qr-close" type="button">關閉</button></div>
 </div>
 <script>
 (function(){
